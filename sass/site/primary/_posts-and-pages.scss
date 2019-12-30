@@ -1,0 +1,35 @@
+/* posts style */
+.main-post {
+  background: $color__background-post;
+  border: 1px solid $color__border-post;
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: 1px 1px 15px $color__text-hover;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+  }
+  .post-title {
+    font-weight: 600;
+  }
+  span {
+    padding-right: 5px;
+    margin-bottom: 10px;
+    color: $color__text-hover;
+    font-size: 0.8rem;
+    &:not(:last-of-type) {
+      border-right: solid 2px $color__border;
+    }
+  }
+  .post-img {
+    img {
+      object-fit: cover;
+      object-position: center center;
+      width: 100%;
+    }
+  }
+  .post-content {
+    color: $color__text-light;
+    font-weight: 300;
+  }
+}
